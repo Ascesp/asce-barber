@@ -1,12 +1,14 @@
 {
   "name": "ascend-barber-studio",
   "version": "1.0.0",
-  "description": "Sitio web profesional de ASCE Barber Studio desplegado en Railway",
+  "description": "Sitio web de ASCEND Barber Studio",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.19.2"
-  }
+  },
+  "author": "Juan Pérez Martínez",
+  "license": "MIT"
 }
