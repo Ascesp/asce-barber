@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASCEND Barber Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+      min-height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 70vh;
+      backdrop-filter: blur(6px);
+    }
+
+    header.site-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 3px solid #b18a5e;
+      background: linear-gradient(90deg, #0f0f0f, #333333);
+      color: white;
+    }
+
+    header.site-header img.logo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    header.site-header h1 {
+      font-size: 2rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    main.site-main {
+      padding: 2rem 1.5rem;
+      flex: 1 0 auto;
+      text-align: center;
+    }
+
+    .video-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .video-item iframe {
+      width: 100%;
+      height: 220px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .video-item iframe:hover {
+      transform: scale(1.03);
+    }
+
+    .reservation-form, .testimonials {
+      margin-top: 3rem;
+      text-align: left;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button {
+      background: #b18a5e;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #a0774d;
+    }
+
+    .testimonial {
+      background: #f8f8f8;
+      border-left: 4px solid #b18a5e;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer.site-footer {
+      padding: 1.5rem 1.25rem;
+      border-top: 3px solid #b18a5e;
+      background: #0f0f0f;
+      color: #eee;
+      font-size: 0.95rem;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .ident-info {
+      line-height: 1.5;
+    }
+
+    @media (max-width: 560px) {
+      header.site-header h1 { font-size: 1.4rem; }
+      .container { margin: 1rem; }
+      .video-item iframe { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <img class="logo" src="imagenes/unnamed.png"  alt="Logo ASCEND Barber Studio" />
+      <h1>ASCEND Barber Studio</h1>
+    </header>
+
+    <main class="site-main">
+      <h2>Bienvenido a <strong>ASCE Barber Studio</strong></h2>
+      <p>Donde el arte del grooming masculino se eleva al siguiente nivel. Cortes de precisión, estilo contemporáneo y un servicio que define tu identidad.</p>
+
+      <div class="video-gallery">
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/watch?v=CnXRmgi0Ev8 " title="Experiencia ASCEND" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/watch?v=VMcX_HHlZio " title="Cortes Modernos y Clásicos" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/watch?v=VMcX_HHlZio" title="Afeitado Premium" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <section style="margin-top:2.5rem;">
+        <h2>Sobre nosotros</h2>
+        <p>En <strong>ASCE Barber Studio</strong> combinamos técnicas tradicionales con innovación moderna. Nuestro equipo ofrece cortes personalizados, tratamientos capilares y experiencias de relajación diseñadas para resaltar tu mejor versión.</p>
+        <p>Vive la experiencia ASCE: elegancia, precisión y confianza.</p>
+      </section>
+
+      <section class="reservation-form">
+        <h2>Reserva tu cita</h2>
+        <p>Agenda tu cita y eleva tu estilo con nosotros:</p>
+        <form>
+          <input type="text" placeholder="Nombre completo" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="tel" placeholder="Teléfono de contacto" required>
+          <input type="datetime-local" required>
+          <textarea rows="3" placeholder="Servicio deseado (corte, afeitado, tratamiento, etc.)"></textarea>
+          <button type="submit">Reservar cita</button>
+        </form>
+      </section>
+
+      <section class="testimonials">
+        <h2>Testimonios de nuestros clientes</h2>
+        <div class="testimonial">
+          <p>“Un lugar excepcional, el servicio es impecable. Mi corte nunca había lucido tan bien.”</p>
+          <strong>- Alejandro Vargas</strong>
+        </div>
+        <div class="testimonial">
+          <p>“ASCEND redefine lo que significa una barbería. Ambiente moderno y resultados perfectos.”</p>
+          <strong>- Jorge López</strong>
+        </div>
+        <div class="testimonial">
+          <p>“La mejor experiencia de grooming que he tenido. Recomendado al 100%.”</p>
+          <strong>- Marco Díaz</strong>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="ident-info">
+          <div><strong>Nombre completo:</strong> ASCE</div>
+          <div><strong>Código:</strong> ASC123</div>
+          <div><strong>Correo de contacto:</strong> contacto@ascendbarber.com</div>
+        </div>
+
+        <div style="text-align:right; font-size:0.85rem;">&copy; <span id="year"></span> ASCE Barber Studio</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

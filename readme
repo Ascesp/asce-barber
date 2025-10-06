@@ -1,0 +1,37 @@
+# 💈 ASCEND Barber Studio
+
+**ASCEND Barber Studio** es una barbería moderna que combina estilo, precisión y experiencia.  
+Este sitio web está diseñado para ofrecer una experiencia elegante y funcional, con información de servicios, videos, testimonios y un sistema básico de reservaciones en línea.
+
+---
+
+## 🧩 Características principales
+
+- 🌆 Diseño moderno y completamente responsivo  
+- 🎥 Galería de videos integrada con `iframe`  
+- 💬 Sección de testimonios reales  
+- 📅 Formulario de reservaciones en línea  
+- 🧔 Imagen de marca profesional “ASCEND Barber Studio”  
+- 🌐 Preparado para despliegue en **Railway** o cualquier otro servicio cloud  
+
+---
+
+## 🧱 Tecnologías utilizadas
+
+| Tipo | Herramienta / Librería |
+|------|------------------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Backend | Node.js + Express.js |
+| Despliegue | Railway |
+| Control de versiones | Git + GitHub |
+| Estilo visual | Imagen de fondo personalizada y diseño responsivo |
+
+---
+
+## ⚙️ Instalación y ejecución local
+
+### 1️⃣ Clona este repositorio
+
+```bash
+git clone https://github.com/tuusuario/asce-barber.git
+cd asce-barber-studio
